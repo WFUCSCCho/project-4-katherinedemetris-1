@@ -80,13 +80,16 @@ Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot th
 each case. Take a screenshot of your graph and put them here by modifying this file, committing, and pushing
 it to this repository.
 
-Insertion, search, and deletion running time (already sorted): <img width="602" alt="Screenshot 2024-12-03 at 8 36 13 AM" src="https://github.com/user-attachments/assets/e08f5e27-c64b-40d9-ad09-2733d90c7589">
+Insertion, search, and deletion running time (already sorted):
+<img width="602" alt="Screenshot 2024-12-03 at 8 36 13 AM" src="https://github.com/user-attachments/assets/e08f5e27-c64b-40d9-ad09-2733d90c7589">
 
 
-Insertion, search, and deletion running time (shuffled): <img width="603" alt="Screenshot 2024-12-03 at 8 37 51 AM" src="https://github.com/user-attachments/assets/c2326699-00c0-4ed5-974f-4af139fe25a8">
+Insertion, search, and deletion running time (shuffled): 
+<img width="603" alt="Screenshot 2024-12-03 at 8 37 51 AM" src="https://github.com/user-attachments/assets/c2326699-00c0-4ed5-974f-4af139fe25a8">
 
 
-Insertion, search, and deletion running time (reversed): <img width="604" alt="Screenshot 2024-12-03 at 8 38 26 AM" src="https://github.com/user-attachments/assets/7537a625-37a9-4d3e-8054-f11622ecf59b">
+Insertion, search, and deletion running time (reversed):
+<img width="604" alt="Screenshot 2024-12-03 at 8 38 26 AM" src="https://github.com/user-attachments/assets/7537a625-37a9-4d3e-8054-f11622ecf59b">
 
 
 ## 5. **Document your Dataset and Results**
