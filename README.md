@@ -81,23 +81,38 @@ each case. Take a screenshot of your graph and put them here by modifying this f
 it to this repository.
 
 Insertion, search, and deletion running time (already sorted):
+* <img width="602" alt="Screenshot 2024-12-03 at 8 36 13 AM" src="https://github.com/user-attachments/assets/e08f5e27-c64b-40d9-ad09-2733d90c7589">
 
-![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
 
+Insertion, search, and deletion running time (shuffled): 
+* <img width="603" alt="Screenshot 2024-12-03 at 8 37 51 AM" src="https://github.com/user-attachments/assets/c2326699-00c0-4ed5-974f-4af139fe25a8">
 
-Insertion, search, and deletion running time (shuffled):
 
 Insertion, search, and deletion running time (reversed):
+* <img width="604" alt="Screenshot 2024-12-03 at 8 38 26 AM" src="https://github.com/user-attachments/assets/7537a625-37a9-4d3e-8054-f11622ecf59b">
+
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source: Melbourne Housing Market Dataset
+* Contains comprehensive property data including suburbs, addresses, room numbers, prices, and other housing attributes
+* Each line provides detailed real estate transaction information
+* Perfect for hash table operation testing due to varied data types
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged): None
 
-Result Analysis: // FINISH ME
+Result Analysis: 
+* After running my hash table implementation with different-sized chunks of data (from 100 up to 1500 lines), I found some really interesting patterns. When I tested it with sorted data, it was definitely slower - insert times jumped from 0.29ms with 100 lines all the way up to 4.89ms with 1300 lines. This makes sense because when data is all sorted, it's more likely to bunch up in the same spots in the hash table.
+  
+* The cool part was seeing how well it handled shuffled and reversed data. With shuffled data, everything stayed pretty quick - inserts only took between 0.06ms and 1.23ms no matter how many lines I threw at it. Reversed data was similar, with inserts taking between 0.04ms and 0.93ms. This shows that my hash table is doing its job well - when data is spread out randomly (like in real-world situations), it keeps things fast and efficient.
+
+* What really stood out was how the implementation handled searching and deleting. Even though timings bounced around a bit (like searches taking anywhere from 0.02ms to 1.78ms), they never got too slow, even with larger amounts of data. This matches up with what we learned about hash tables in class - they should be O(1) on average when the data is distributed well, and that's exactly what I saw.
+  
+* The separate chaining I used for handling collisions seems to work great too. Even when I fed it sorted data (which could have been a worst-case scenario), it kept things from falling apart completely. This was cool to see in practice after learning about it theoretically.
+  
+* These results really show why hash tables are so useful in real-world applications - they stay fast even when you throw a lot of data at them, as long as you implement them properly. The only time you might need to worry is if your data is coming in in a very specific pattern, but even then, it's still manageable.
 
 ## Submission:
 
